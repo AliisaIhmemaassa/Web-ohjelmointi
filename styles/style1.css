@@ -29,42 +29,44 @@
 }
 
 /* Image stack */
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
+@media (max-width: 600px){
+    .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    }
 
-.text-side {
-  flex: 1;
-}
+    .text-side {
+    flex: 1;
+    }
 
-.imstack {
-  position: relative;
-  margin-right: 100px;
-  margin-top: -60px;
-  width: 20%;
-  height: auto;
-  max-width: 338px;
-}
+    .imstack {
+    position: relative;
+    margin-right: 100px;
+    margin-top: -60px;
+    width: 20%;
+    height: auto;
+    max-width: 338px;
+    }
 
-.bug-part {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+    .bug-part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    }
 
-.hitbox {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 302px; height: 160px;
-  cursor: pointer;
-  pointer-events: auto;
+    .hitbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 302px; height: 160px;
+    cursor: pointer;
+    pointer-events: auto;
+    }
 }
 
 /*Indent*/
