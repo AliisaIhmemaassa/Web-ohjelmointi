@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style2.css" data-page="style2">
+</head>
+<body>
+    <div class="navbar">
+        <a href="../pages/media.html">Media</a>
+        <a href="../index.html">Etusivu</a>
+    </div>
+    <h1 class="indent1"><a href="../index.html" style="text-decoration: none; color: inherit;">Abacab ry</a></h1>
+    <h2 class="indent2">Testaa mikä Abacab olet!</h2>
+    <div class="question-box">
+      <div class="page" id="page1">
+        <p>Mikä on lempivärisi?</p>
+        <input type="text" id="answer1" placeholder="Vastaa tähän">
+      </div>
+
+      <div class="page" id="page2" style="display:none;">
+        <p>Lempi eläimesi?</p>
+        <input type="text" id="answer2" placeholder="Vastaa tähän">
+      </div>
+
+       <div class="page" id="page3" style="display:none;">
+        <p>Lempi ruokasi?</p>
+        <input type="text" id="answer3" placeholder="Vastaa tähän">
+      </div>
+
+      <div class="page" id="page4" style="display:none;">
+        <div id="results"></div>
+      </div>
+
+      <div class="nav-buttons">
+        <button id="prevBtn" onclick="prevPage()">Takaisin</button>
+        <button id="nextBtn" onclick="nextPage()">Seuraava</button>
+      </div>
+    </div>
+    <script src="../scripts/abacab.js"></script>
+    <script src="../scripts/theme-toggle.js"></script>
+</body>
+</html>

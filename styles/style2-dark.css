@@ -1,0 +1,93 @@
+:root {
+--pcol:  #8ecfa0;
+--h1col: #9baf4a;
+--h2col: #6dbf85;
+}
+
+
+/*Navbar*/
+.navbar {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: var(--pcol);
+  background-color: rgb(40, 85, 59);
+}
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    font-size: large;
+}
+.navbar a:hover {
+    color: var(--pcol);
+}
+.navbar button {
+    margin-left: auto;
+}
+
+/*Q-Box*/
+.question-box {
+
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-left: 120px;
+    max-width: 500px;
+}
+.prevbut{
+    display: inline-block;
+    margin-right: 10px;
+}
+.nextbut{
+    display: inline-block;
+    margin-left: 40px;
+}
+.centered{
+    text-align: center;
+}
+.right{
+    text-align: right;
+}
+
+/*Indent*/
+.indent1{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 60px;
+}
+.indent2{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.indent3{
+    margin-left: 120px;
+    max-width: 400px;
+}
+
+/*Colors, fonts, styles*/
+body { background-color: #14271a; }
+
+h1{color: var(--h1col); font-size: 50px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+h2{color: var(--h2col); font-size: 24px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+p{color: var(--pcol); font-size: 18px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+
+table, th, td{
+    border: 2px solid var(--h1col);
+    color: var(--pcol);
+    font-family: sans-serif;
+}
+ul{
+    color: var(--pcol);
+    list-style-type: square;
+}
+ol{
+    color: var(--pcol);
+    list-style-type: upper-roman;
+}
