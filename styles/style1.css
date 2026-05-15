@@ -28,29 +28,41 @@
     margin-left: auto;
 }
 
-/*Image stack*/
+/* Image stack */
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
-.imstack{
-    position: relative;
-    width: 338px;
-    height: 189px;
+
+.text-side {
+  flex: 1;
 }
+
+.imstack {
+  position: relative;
+  margin-right: 100px;
+  margin-top: -60px;
+  width: 20%;
+  height: auto;
+  max-width: 338px;
+}
+
 .bug-part {
   position: absolute;
-  top: 0; left: 0;
-  top: 30%; left: 70%;
-  width: 200px; height: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
   object-fit: cover;
 }
+
 .hitbox {
   position: absolute;
-  top: 0; left: 0;
-  top: 30%; left: 70%;
-  width: 200px; height: 105px;
-  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 302px; height: 160px;
   cursor: pointer;
   pointer-events: auto;
 }
