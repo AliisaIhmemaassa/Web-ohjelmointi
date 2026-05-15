@@ -1,5 +1,6 @@
 # Suunnittelu
 Sivusto on fiktiivisen yrityksen Abacab oy kotisivu. Koostuu kolmesta sivusta: etusivu, media sivu ja abacab sivu.
+
 Staattiset ominaisuudet:
 - Jokaisella sivulla on navigointi palkki, josta voi vaihtaa sivja.
 - Etusivulla on otsikko ja tekstiä.
