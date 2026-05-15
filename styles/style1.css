@@ -1,8 +1,19 @@
+
 :root {
   --pcol: rgb(73, 37, 11);
   --h1col: rgb(139, 69, 19);
   --h2col: rgb(184, 134, 11);
+  --bground: navajowhite;
   --border: saddlebrown;
+  --navbar: var(--h2col);
+}
+[data-theme="dark"] {
+    --pcol:  #e8c99a;
+    --h1col: #c87941;
+    --h2col: #e8a825; 
+    --bground: #211409;
+    --border: #3d2510;
+    --navbar: #936a18;
 }
 
 /*Navbar*/
@@ -13,7 +24,7 @@
     margin-bottom: 20px;
     padding: 10px;
     color: var(--pcol);
-    background-color: var(--h2col);
+    background-color: var(--navbar);
 }
 .navbar a {
     text-decoration: none;
@@ -29,44 +40,38 @@
 }
 
 /* Image stack */
-@media (max-width: 600px){
-    .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    }
-
-    .text-side {
-    flex: 1;
-    }
-
-    .imstack {
-    position: relative;
-    margin-right: 100px;
-    margin-top: -60px;
-    width: 20%;
-    height: auto;
-    max-width: 338px;
-    }
-
-    .bug-part {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    }
-
-    .hitbox {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 302px; height: 160px;
-    cursor: pointer;
-    pointer-events: auto;
-    }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.text-side {
+  flex: 1;
+}
+.imstack {
+  position: relative;
+  margin-right: 120px;
+  margin-top: -60px;
+  width: 20%;
+  height: auto;
+  max-width: 338px;
+}
+.bug-part {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.hitbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 302px; height: 160px;
+  cursor: pointer;
+  pointer-events: auto;
 }
 
 /*Indent*/
@@ -91,7 +96,7 @@
 }
 
 /*Colors, fonts, styles*/
-body{background-color: navajowhite;}
+body{background-color: var(--bground);}
 
 h1{color: var(--h1col); font-size: 50px;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
